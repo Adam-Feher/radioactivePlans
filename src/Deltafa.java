@@ -17,11 +17,12 @@ public class Deltafa extends Plant {
 
         checkResources();
 
-
-        if (tapanyag < 5) {
-            world.needOfDeltaRad+=4;
-        } else if (tapanyag >= 5 && tapanyag <= 10) {
-            world.needOfDeltaRad += 1;
+        if (this.isAlive) {
+            if (tapanyag < 5) {
+                world.needOfDeltaRad+=4;
+            } else if (tapanyag >= 5 && tapanyag <= 10) {
+                world.needOfDeltaRad += 1;
+            }
         }
     }
 }

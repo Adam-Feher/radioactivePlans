@@ -14,7 +14,9 @@ public class Puffancs extends Plant {
             tapanyag-=1;
         }
         checkResources();
-        world.needOfAlphaRad += 10 - tapanyag;
+        if (this.isAlive) {
+            world.needOfAlphaRad += 10 - tapanyag;
+        }
     }
 
     @Override
